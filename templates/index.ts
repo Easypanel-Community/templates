@@ -18,12 +18,16 @@ import { meta as meta_changedetection } from "./changedetection/meta";
 import { generate as generate_changedetection } from "./changedetection";
 import { meta as meta_chatwoot } from "./chatwoot/meta";
 import { generate as generate_chatwoot } from "./chatwoot";
+import { meta as meta_codex_docs } from "./codex-docs/meta";
+import { generate as generate_codex_docs } from "./codex-docs";
 import { meta as meta_commento } from "./commento/meta";
 import { generate as generate_commento } from "./commento";
 import { meta as meta_dashy } from "./dashy/meta";
 import { generate as generate_dashy } from "./dashy";
 import { meta as meta_directus } from "./directus/meta";
 import { generate as generate_directus } from "./directus";
+import { meta as meta_documize } from "./documize/meta";
+import { generate as generate_documize } from "./documize";
 import { meta as meta_domainmod } from "./domainmod/meta";
 import { generate as generate_domainmod } from "./domainmod";
 import { meta as meta_drone_runner } from "./drone-runner/meta";
@@ -70,6 +74,8 @@ import { meta as meta_homarr } from "./homarr/meta";
 import { generate as generate_homarr } from "./homarr";
 import { meta as meta_homeassistant } from "./homeassistant/meta";
 import { generate as generate_homeassistant } from "./homeassistant";
+import { meta as meta_humhub } from "./humhub/meta";
+import { generate as generate_humhub } from "./humhub";
 import { meta as meta_imgproxy } from "./imgproxy/meta";
 import { generate as generate_imgproxy } from "./imgproxy";
 import { meta as meta_jellyfin } from "./jellyfin/meta";
@@ -128,6 +134,8 @@ import { meta as meta_nzbget } from "./nzbget/meta";
 import { generate as generate_nzbget } from "./nzbget";
 import { meta as meta_openspeedtest } from "./openspeedtest/meta";
 import { generate as generate_openspeedtest } from "./openspeedtest";
+import { meta as meta_oxigen } from "./oxigen/meta";
+import { generate as generate_oxigen } from "./oxigen";
 import { meta as meta_paperlessngx } from "./paperlessngx/meta";
 import { generate as generate_paperlessngx } from "./paperlessngx";
 import { meta as meta_phpmyadmin } from "./phpmyadmin/meta";
@@ -198,6 +206,8 @@ import { meta as meta_wikijs } from "./wikijs/meta";
 import { generate as generate_wikijs } from "./wikijs";
 import { meta as meta_wordpress } from "./wordpress/meta";
 import { generate as generate_wordpress } from "./wordpress";
+import { meta as meta_zipline } from "./zipline/meta";
+import { generate as generate_zipline } from "./zipline";
 
 const templates = [
   { slug: "ackee", meta: meta_ackee, generate: generate_ackee },
@@ -209,9 +219,11 @@ const templates = [
   { slug: "budibase", meta: meta_budibase, generate: generate_budibase },
   { slug: "changedetection", meta: meta_changedetection, generate: generate_changedetection },
   { slug: "chatwoot", meta: meta_chatwoot, generate: generate_chatwoot },
+  { slug: "codex-docs", meta: meta_codex_docs, generate: generate_codex_docs },
   { slug: "commento", meta: meta_commento, generate: generate_commento },
   { slug: "dashy", meta: meta_dashy, generate: generate_dashy },
   { slug: "directus", meta: meta_directus, generate: generate_directus },
+  { slug: "documize", meta: meta_documize, generate: generate_documize },
   { slug: "domainmod", meta: meta_domainmod, generate: generate_domainmod },
   { slug: "drone-runner", meta: meta_drone_runner, generate: generate_drone_runner },
   { slug: "drone", meta: meta_drone, generate: generate_drone },
@@ -235,6 +247,7 @@ const templates = [
   { slug: "heimdall", meta: meta_heimdall, generate: generate_heimdall },
   { slug: "homarr", meta: meta_homarr, generate: generate_homarr },
   { slug: "homeassistant", meta: meta_homeassistant, generate: generate_homeassistant },
+  { slug: "humhub", meta: meta_humhub, generate: generate_humhub },
   { slug: "imgproxy", meta: meta_imgproxy, generate: generate_imgproxy },
   { slug: "jellyfin", meta: meta_jellyfin, generate: generate_jellyfin },
   { slug: "jellyseerr", meta: meta_jellyseerr, generate: generate_jellyseerr },
@@ -264,6 +277,7 @@ const templates = [
   { slug: "ntfy", meta: meta_ntfy, generate: generate_ntfy },
   { slug: "nzbget", meta: meta_nzbget, generate: generate_nzbget },
   { slug: "openspeedtest", meta: meta_openspeedtest, generate: generate_openspeedtest },
+  { slug: "oxigen", meta: meta_oxigen, generate: generate_oxigen },
   { slug: "paperlessngx", meta: meta_paperlessngx, generate: generate_paperlessngx },
   { slug: "phpmyadmin", meta: meta_phpmyadmin, generate: generate_phpmyadmin },
   { slug: "pidgin", meta: meta_pidgin, generate: generate_pidgin },
@@ -299,6 +313,7 @@ const templates = [
   { slug: "whiteboard", meta: meta_whiteboard, generate: generate_whiteboard },
   { slug: "wikijs", meta: meta_wikijs, generate: generate_wikijs },
   { slug: "wordpress", meta: meta_wordpress, generate: generate_wordpress },
+  { slug: "zipline", meta: meta_zipline, generate: generate_zipline },
 ];
 
 export default templates;
